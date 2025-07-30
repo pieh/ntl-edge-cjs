@@ -1,8 +1,11 @@
-import * as wat from "fake-module";
+import { createRequire } from "node:module";
+
+const require = createRequire(import.meta.url);
+
+const { test } = require("./cjs-entry.cjs");
 
 export default async function handler(req) {
-  console.log({ wat });
-  return new Response("test " + wat.test);
+  return new Response(test);
 }
 
 export const config = {

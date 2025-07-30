@@ -1,5 +1,0 @@
-{
-  "dependencies": {
-    "fake-module": "file:./node_modules/fake-module"
-  }
-}
