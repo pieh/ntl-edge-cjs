@@ -1,3 +1,4 @@
 // just a repro
 
-module.exports = require("./cjs-mod.js");
+// module.exports = require("./cjs-mod.js");
+exports.test = "test";
